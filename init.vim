@@ -14,6 +14,7 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 set encoding=UTF-8
 
@@ -21,6 +22,8 @@ call plug#end()
 
 filetype indent plugin on
 syntax enable
+colorscheme tokyonight
+
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
